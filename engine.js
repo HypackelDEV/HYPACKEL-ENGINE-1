@@ -27,6 +27,8 @@ class InputManager {
 }
 
 
+
+
 class Sprite {
     constructor(xPos, yPos, xSize, ySize, physicsEnabled, color, mass, animAvailable, imgID) {
         this.x = xPos; // X-coordinate of the sprite
