@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypackel Engine 1 Example</title>
+    <style>
+        /* Style your container and elements as needed */
+        .container {
+            display: flex;
+        }
+        #canvas {
+            border: 1px solid #000;
+            /* Add other styles for canvas */
+        }
+        #code-editor {
+            width: 50%; /* Adjust as needed */
+            /* Add other styles for code editor */
+        }
+    </style>
+</head>
+<body>
+    <i>some things will not work. idk whats wrong svg does not show up when using github pages. so pls just use this as a refrence or download locally. make sure to use our github link as our engine so u can save space</i>
+    <div class="container">
+        <canvas id="canvas" width="800" height="600"></canvas>
+    </div>
+    <script type="module" src="example.js"></script>
+    <script>
+        function run() {
+            const el = document.getElementById('cnsl');
+            const scriptText = el.value;
+            const oldScript = document.getElementById('scriptContainer');
+            let newScript;
+    
+            if (oldScript) {
+                oldScript.parentNode.removeChild(oldScript);
+            }
+    
+            newScript = document.createElement('script');
+            newScript.id = 'scriptContainer';
+            newScript.text = el.value;
+            document.body.appendChild(newScript);
+        }
+    </script>
+</body>
+</html>
