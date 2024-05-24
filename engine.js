@@ -1,4 +1,4 @@
-class InputManager {
+class InputManager { 
     constructor() {
         this.keys = {}; // Store the state of each key (pressed or not)
         this.setupKeyboardListeners();
